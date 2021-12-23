@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>应用formaction属性</title>
+    </head>
+    <body>
+        <form method="POST">
+            用户名：<input type="text" name="username"  autofocus/><br>
+            密码：<input type="password" name="password" required/><br>
+            <input type="submit" value="添加" formaction="add.jsp" />
+            <input type="submit" value="修改" formaction="update.jsp" />
+            <input type="submit" value="删除" formaction="delete.jsp" />
+        </form>
+    </body>
+</html>

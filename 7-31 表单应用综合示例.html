@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>表单应用综合示例</title>
+    </head>
+    <body>
+        <h1>用户调查</h1>
+        <form method="POST" enctype="multipart/form-data" action="">
+            姓名：<input type="text" name="username" size="20" required autofocus /><br>
+            密码：<input type="password" name="password" size="20" required /><br>
+            年龄：<input type="number" name="age" size="20" max="100" /><br>
+            微博主页：<input type="url" name="url" size="20" value="http://" /><br>
+            邮箱：<input type="email" name="email" size="20" /><br>
+            照片：<input type="file" name="photo" /><br>
+            喜欢的音乐:
+            <input type="checkbox" name="m1" value="rock" />摇滚乐
+            <input type="checkbox" name="m1" value="jazz" />爵士
+            <input type="checkbox" name="m1" value="pop" />流行乐<br>
+            居住的城市:
+            <input type="radio" name="city" value="beijing" />北京
+            <input type="radio" name="city" value="shanghai" />上海
+            <input type="radio" name="city" value="guangzhou" />广州<br>
+            最喜欢的网站：
+            <select name="website">
+                <option value="baidu">百度</option>
+                <option value="tecent">腾讯</option>
+                <option value="netease">网易</option>
+                <option value="google">google</option>
+            </select>
+            <br><br>
+            爱好：
+            <select name="hobbies" size="3" multiple>
+            <option value="travel">旅游</option> 
+            <option value="sports">体育</option>
+            <option value="read">阅读</option>
+            <option value="games">游戏</option>
+            <option value="music">音乐</option>
+            </select><br><br>
+            留言：
+            <textarea name="say" rows=10 cols=40 placeholder="留言">
+            </textarea>
+            <br><br>
+            <input type="submit" value="提交" />
+            <input type="reset" value="重置" />
+            <input type="hidden"  name="invest" value="invest"/>
+        </form>
+    </body>
+</html>
